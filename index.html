@@ -2,339 +2,397 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forkio</title>
-    <link rel="stylesheet" href="dist/css/styles.min.css" />
+    <title>Tania Panasiuk CV</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header class="header container">
-          <a class="header__link" href="#">
-            <div class="header__link-img"></div>
-            <span class="header__link-slogan">ForkIO</span>
-          </a>
-          <button class="header__btn-top">Buy Now</button>
-          <div class="burger">
-            <input id ="burger-touch" type="checkbox">
-            <label class="burger__btn" for="burger-touch">
-            <span></span>
-            <span></span>
-            <span></span>
-            </label>
-            <ul class="menu">
-            <li><a href="#" class="menu__item">Overview</a> </li>
-            <li><a href="#" class="menu__item">About Fork</a> </li>
-            <li><a href="#" class="menu__item">Buying Options</a> </li>
-            <li><a href="#" class="menu__item">Support</a> </li>
-            </ul>
-         </div>
+    <!-- Header block starts -->
+
+    <header class="header" id="header">
+      <div class="logo">
+        <a class="logo-link" target="blank"
+          ><img src="images/header/curriculum.png" alt="logo"
+        /></a>
+        <div class="logo-title">
+          <h1>my cv</h1>
+        </div>
+      </div>
+      <div class="menu-btn" id="menu-button">
+        <div class="menu-btn-burger"></div>
+      </div>
     </header>
 
-      <div class="fork-app container">
-          <h1 class="fork-app__title">Fork App</h1>
-          <h2 class="fork-app__subtitle fork-app__subtitle--violet">
-            A Real Gamechanger In The World Of Web-Development
-          </h2>
-          <h2 class="fork-app__subtitle fork-app__subtitle--grey">
-            v. 2.8 For Mac and Windows
-          </h2>
-        <a href="#" class="fork-app__download-btn"> Download For Free Now </a>
+    <!-- Header block ends -->
+
+    <!-- Navigation block starts -->
+
+    <nav class="nav" id="menu">
+      <div class="profile">
+        <img
+          class="profile-img"
+          src="images/profile-photo/my-photo.png"
+          alt="profile-photo"
+        />
+        <p class="profile-title">Frontend developer</p>
+        <hr class="profile-line" />
       </div>
-    
-      <main class="main-block">
-        <section class="block-after-header">
-        <div class="content-block">
-          <p class="content-block__top-description">
-            Unlimited 30-Days Trial Period
-          </p>
-          <h2 class="content-block__main-header">Revolutionary editor</h2>
-          <p class="content-block__description">
-            Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
-            laoreet vulputate dignissim. Sed id metus id quam auctor molestie
-            eget ut augue.
-          </p>
+      <div class="nav-menu">
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="menu-list-link" data-link="home">Home</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" data-link="about">About</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" data-link="skills"
+              >Technologies and tools</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" data-link="experience"
+              >Experience</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" data-link="education"
+              >Education</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" data-link="languages">Languages</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Navigation block ends -->
+
+    <main class="main">
+
+      <section class="home-block" id="home">
+        <h2 class="home-block-greeting" data-link="home">Hello!</h2>
+        <div class="home-block-title">
+          <span class="home-block-title-part">I`m </span
+          ><span class="home-block-name">Tania Panasiuk</span>
         </div>
-        <section class="buttons">
-          <section class="buttons__block">
-            <div class="buttons__wrapper">
-              <button class="buttons__btn-item">
-                <svg
-                  height="16"
-                  viewBox="0 0 16 16"
-                  version="1.1"
-                  width="16"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"
-                  ></path>
-                </svg>
-                <span class="buttons__btn-text">Watch</span>
-              </button>
-              <span class="buttons__btn-value">1,397</span>
-            </div>
-          </section>
-
-          <section class="buttons__block">
-            <div class="buttons__wrapper buttons__wrapper--star-width">
-              <button class="buttons__btn-item">
-                <svg
-                  height="16"
-                  viewBox="0 0 16 16"
-                  version="1.1"
-                  width="16"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"
-                  ></path>
-                </svg>
-                <span class="buttons__btn-text">Star</span>
-              </button>
-              <span class="buttons__btn-value">21,038</span>
-            </div>
-          </section>
-
-          <section class="buttons__block">
-            <div class="buttons__wrapper buttons__wrapper--fork-width">
-              <button class="buttons__btn-item">
-                <svg
-                  viewBox="0 0 16 16"
-                  version="1.1"
-                  width="16"
-                  height="16"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"
-                  ></path>
-                </svg>
-                <span class="buttons__btn-text">Fork</span>
-              </button>
-              <span class="buttons__btn-value">4,391</span>
-            </div>
-          </section>
-        </section>
-      </section>
-        <section class="functional">
-            <h2 class="functional__main-header">
-              Here is what you get
-            </h2>
-            <img class="functional__example" src="dist/img/backgrounds/editor_1200.png">
-          <section class="functional__pc-content">
-            <div class="functional__wrapper">
-              <div class="functional__wrapper-icon">
-              <img
-                class="functional__wrapper-search"
-                src="dist/img/icons/icon_1.png"
-                alt="search icon"
-              />
-              </div>
-              <div class="functional__text-content">
-                <h3
-                  class="functional__wrapper-header"
-                >
-                  Creatred to Make The Web Better
-                </h3>
-                <p
-                  class="functional__wrapper-description"
-                >
-                  Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra
-                  dui laoreet vulputate dignissim. Sed id metus id quam auctor
-                  molestie eget ut augue.
-                </p>
-              </div>
-            </div>
-
-            <div class="functional__wrapper">
-              <div class="functional__wrapper-icon">
-              <img
-                class="functional__wrapper-sircle"
-                src="dist/img/icons/icon_2.png"
-                alt="search icon"
-              />
-            </div>
-            <div class="functional__text-content">
-                <h3
-                  class="functional__wrapper-header"
-                >
-                  Incredibly Powerful Tool
-                </h3>
-                <p
-                  class="functional__wrapper-description"
-                >
-                  Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
-                  felis odio, ut volutpat massa placerat ac. Curabitur dapibus
-                  iaculis mi gravida luctus. Aliquam erat volutpat.
-                </p>
-              </div>
-            </div>
-
-            <div class="functional__wrapper">
-              <div class="functional__wrapper-icon">
-                <img
-                  class="functional__wrapper-tube"
-                  src="dist/img/icons/icon_3.png"
-                  alt="search icon"
-                />
-              </div>
-              <div class="functional__text-content">
-                <h3
-                  class="functional__wrapper-header"
-                >
-                  Experimental Stuff
-                </h3>
-                <p
-                  class="functional__wrapper-description"
-                >
-                  Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
-                  felis odio, ut volutpat massa placerat ac. Curabitur dapibus
-                  iaculis mi gravida luctus. Aliquam erat volutpat.
-                </p>
-              </div>
-            </div>
-
-            <div class="functional__wrapper">
-              <div class="functional__wrapper-icon">
-              <img
-                class="functional__wrapper-clock"
-                src="dist/img/icons/icon_4.png"
-                alt="search icon"
-              />
-              </div>
-              <div class="functional__text-content">
-                <h3
-                  class="functional__wrapper-header"
-                >
-                  Creatred to Make The Web Better
-                </h3>
-                <p
-                  class="functional__wrapper-description"
-                >
-                  Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
-                  felis odio, ut volutpat massa placerat ac. Curabitur dapibus
-                  iaculis mi gravida luctus. Aliquam erat volutpat.
-                </p>
-              </div>
-            </div>
-          </section>
-      </section>
-      <section class="example__img"></section>
-      <section class="people-talking container">
-          <h2 class="people-talking__slogan">
-              People Are Talking About Fork
-          </h2>
-          <div class="card">
-              <div class="card__img-minwidth">
-                  <img class="card__img" src="dist/img/people/fork1_1.png" alt="not found">
-              </div>
-              <p class="card__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
-          </div>
-          <div class="card">
-              <div class="card__img-minwidth">
-                  <img class="card__img" src="dist/img/people/fork1_2.png" alt="not found">
-              </div>
-              <p class="card__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
-          </div>
-          <div class="card">
-              <div class="card__img-minwidth">
-                  <img class="card__img" src="dist/img/people/fork1_3.png" alt="not found">
-              </div>
-              <p class="card__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.</p>
-          </div>
-          <div class="card">
-              <div class="card__img-minwidth">
-                  <img class="card__img" src="dist/img/people/fork1_4.png" alt="not found">
-              </div>
-              <p class="card__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
-          </div>
-          <div class="card">
-              <div class="card__img-minwidth">
-                  <img class="card__img" src="dist/img/people/fork1_5.png" alt="not found">
-              </div>
-              <p class="card__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
-          </div>
-          <div class="card">
-              <div class="card__img-minwidth">
-                  <img class="card__img" src="dist/img/people/fork1_6.png" alt="not found">
-              </div>
-              <p class="card__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
-          </div>
-          <p class="people-talking__text">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-          <div class="people-talking__line"></div>
+        <p class="home-block-text">
+          I want to get an opportunity to improve my skills in creating
+          responsive layouts, javascript, learn new frameworks and grow up as a
+          junior frontend developer. So I am ready to work and practice more and
+          more.
+        </p>
+        <hr class="line" />
       </section>
 
-       <section class="pricing">
-          <h2 class="pricing__header">Fork Subscription Pricing</h2>
-          <section class="pricing__pc-version">
-          <section class="pricing__wrapper">
-          <div class="pricing__item">
-            <div class="pricing__top-background">
-              <p class="pricing__top-background-title">Students</p>
-            </div>
-            <div class="pricing__bottom-background">
-              <p class="pricing__bottom-background-price">$29</p>
-              <p class="pricing__bottom-background-duration">per month</p>
-              <p class="pricing__bottom-background-benefit">Personal License</p>
-              <a class="pricing__bottom-background-btn pricing__bottom-background-btn--equal" href="#">purchase</a>
-            </div>
+      <section class="about" id="about">
+        <h2 class="about-title">About</h2>
+        <div class="about-content">
+          <div class="content-item">
+            <img src="images/main/about/location.png" alt="location" />
+            <p>Kyiv, Ukraine</p>
           </div>
-
-          <div class="pricing__item pricing__item--margin">
-            <div class="pricing__top-background">
-              <p class="pricing__top-background-title">professional</p>
-            </div>
-            <div class="pricing__bottom-background">
-              <p class="pricing__bottom-background-price">$59</p>
-              <p class="pricing__bottom-background-duration">per month</p>
-              <p class="pricing__bottom-background-benefit">
-                Professional License<br>Email Support</br>
-              </p>
-              <a class="pricing__bottom-background-btn pricing__bottom-background-btn--margin" href="#">purchase</a>
-            </div>
+          <div class="content-item">
+            <img src="images/main/about/phone.png" alt="phone" />
+            <p>+38 (095) 511-85-18</p>
           </div>
-        </section>
-
-        <section class="pricing__wrapper">
-          <div class="pricing__item pricing__item--core">
-            <div
-              class="pricing__top-background pricing__top-background--highlighted"
-            >
-              <p class="pricing__top-background-title">agency</p>
-            </div>
-            <div
-              class="pricing__bottom-background pricing__bottom-background--highlighted"
-            >
-              <p class="pricing__bottom-background-price">$99</p>
-              <p class="pricing__bottom-background-duration">per month</p>
-              <p class="pricing__bottom-background-benefit">
-                1-12 Team Members<br>Phone Support</br>
-              </p>
-              <a class="pricing__bottom-background-btn" href="#">purchase</a>
-            </div>
+          <div class="content-item">
+            <img src="images/main/about/email.png" alt="email" />
+            <p>tetiana.panasiuk21@gmail.com</p>
           </div>
-
-          <div class="pricing__item pricing__item--last-item">
-            <div class="pricing__top-background">
-              <p class="pricing__top-background-title">enterprise</p>
-            </div>
-            <div
-              class="pricing__bottom-background pricing__bottom-background--margin"
-            >
-              <p class="pricing__bottom-background-price">$159</p>
-              <p class="pricing__bottom-background-duration">per month</p>
-              <p class="pricing__bottom-background-benefit pricing__bottom-background-benefit--line-height">
-                Unlimited Team Members<br>24/7 Phone Support</br>
-              </p>
-              <a class="pricing__bottom-background-btn" href="#">purchase</a>
-            </div>
+          <div class="content-item">
+            <img src="images/main/about/telegram.png" alt="telegram" />
+            <p>@tania_panasiuk</p>
           </div>
-        </section>
-        </section>
+          <div class="content-item">
+            <img src="images/main/about/github.png" alt="githab" />
+            <p>
+              <a href="https://github.com/iwanttosmile4u" target="blank"
+                >Click here</a
+              >
+            </p>
+          </div>
+          <div class="content-item">
+            <img src="images/main/about/gitlab.png" alt="gitlab" />
+            <p>
+              <a href="https://gitlab.com/tetiana.panasiuk21" target="blank"
+                >Click here</a
+              >
+            </p>
+          </div>
+        </div>
+        <hr class="line" />
       </section>
-      </main>
-    <script src="dist/js/scripts.min.js"></script>
+
+      <section class="skills" id="skills">
+        <h2 class="skills-title">technologies and tools</h2>
+        <div class="skills-container">
+            <div class="skills-bar">
+                <div class="skills-bar-title">
+                    <span>HTML5, CSS</span>
+                </div>
+                <div class="skills-bar-progress html-css">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skills-bar">
+                <div class="skills-bar-title">
+                    <span>Bootstrap 5</span>
+                </div>
+                <div class="skills-bar-progress bootstrap">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skills-bar">
+                <div class="skills-bar-title">
+                    <span>BEM methodology</span>
+                </div>
+                <div class="skills-bar-progress bem">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skills-bar">
+                <div class="skills-bar-title">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skills-bar-progress javascript">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skills-bar">
+                <div class="skills-bar-title">
+                    <span>ES6</span>
+                </div>
+                <div class="skills-bar-progress es6">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skills-bar">
+                <div class="skills-bar-title">
+                    <span>React</span>
+                </div>
+                <div class="skills-bar-progress react">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skills-bar">
+                <div class="skills-bar-title">
+                    <span>Gulp, Webpack</span>
+                </div>
+                <div class="skills-bar-progress gulp-webpack">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skills-bar">
+                <div class="skills-bar-title">
+                    <span>npm</span>
+                </div>
+                <div class="skills-bar-progress npm">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skills-bar">
+                <div class="skills-bar-title">
+                    <span>GIT</span>
+                </div>
+                <div class="skills-bar-progress git">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <hr class="line" />
+      </section>
+
+      <section class="experience" id="experience">
+          <h2 class="exp-title">experience</h2>
+          <div class="exp-description">
+            <p class="exp-description-text">
+                From 2015 to 2021 I worked as a journalist in various Ukrainian printed and internet publications 
+                such as: 24tv.ua, PaySpace Magazine, NewWest Media.
+            </p>
+            <p class="exp-description-text">
+                In the process of my career as a journalist I began to study data journalism 
+                and how to do visualizations. I began to study Python to work with data. Learning 
+                Python was the strong push to change the journalist profession to the developer.
+            </p>
+            <span>A few projects, which i`ve done during my studying in frontend course:</span>
+          </div>
+          <div class="exp-content">
+            <div class="exp-period">
+              <span class="exp-rounded"></span>
+              <span class="exp-line"></span>
+            </div>
+            <div class="exp-data">
+              <h3 class="exp-descr">Online store responsive layout</h3>
+              <p class="exp-link"><a href="https://github.com/front-camp-2021/html-css-module-iwanttosmile4u/tree/master/src/module-2/components" target="blank" >Click here</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-content">
+            <div class="exp-period">
+              <span class="exp-rounded"></span>
+              <span class="exp-line"></span>
+            </div>
+            <div class="exp-data">
+              <h3 class="exp-descr">Online store using Bootstrap 5</h3>
+              <p class="exp-link"><a href="https://github.com/front-camp-2021/html-css-module-iwanttosmile4u/tree/master/src/module-2/bootstrap-design" target="blank" >Click here</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-content">
+            <div class="exp-period">
+              <span class="exp-rounded"></span>
+              <!-- <span class="exp-line"></span> -->
+            </div>
+            <div class="exp-data">
+              <h3 class="exp-descr">Online store using SCSS and BEM</h3>
+              <p class="exp-link"><a href="https://github.com/front-camp-2021/html-css-module-iwanttosmile4u/tree/master/src/module-3" target="blank" >Click here</a></p>
+            </div>
+          </div>
+        </div>
+
+        <p class="project-examples">DAN IT project examples: </p>
+
+        <div class="exp-content">
+            <div class="exp-period">
+              <span class="exp-rounded"></span>
+              <span class="exp-line"></span>
+            </div>
+            <div class="exp-data">
+              <h3 class="exp-descr">A simple online-store page using React</h3>
+              <p class="exp-link"><a href="https://gitlab.com/tetiana.panasiuk21/homeworks/-/tree/master/react/hw2-online-store-page" target="blank" >Click here</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-content">
+            <div class="exp-period">
+              <span class="exp-rounded"></span>
+              <span class="exp-line"></span>
+            </div>
+            <div class="exp-data">
+              <h3 class="exp-descr">Doctor's visit cards for the secretary</h3>
+              <p class="exp-link"><a href="https://github.com/iwanttosmile4u/step-project_cards" target="blank" >Click here</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-content">
+            <div class="exp-period">
+              <span class="exp-rounded"></span>
+              <span class="exp-line"></span>
+            </div>
+            <div class="exp-data">
+              <h3 class="exp-descr">Static layout with minimal JS functional</h3>
+              <p class="exp-link"><a href="https://gitlab.com/tetiana.panasiuk21/step-project-ham" target="blank" >Click here</a></p>
+            </div>
+          </div>
+        </div>
+        <hr class="line" />
+      </section>
+
+      <section class="education" id="education">
+        <h2 class="edu-title">education</h2>
+        <div class="edu-block">
+          <div class="edu-content">
+            <div class="edu-period">
+              <span class="edu-rounded"></span>
+              <span class="edu-line"></span>
+            </div>
+            <div class="edu-data">
+              <h3 class="edu-header">Frontend offline course</h3>
+              <p class="edu-place">DAN IT</p>
+              <p class="edu-year">From january 2021 (at the final stage)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-content">
+            <div class="edu-period">
+              <span class="edu-rounded"></span>
+              <span class="edu-line"></span>
+            </div>
+            <div class="edu-data">
+              <h3 class="edu-header">Eleks frontend camp</h3>
+              <p class="edu-place">Compleated html/css module</p>
+              <p class="edu-year">3 weeks (september-october 2021)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-content">
+            <div class="edu-period">
+              <span class="edu-rounded"></span>
+              <span class="edu-line"></span>
+            </div>
+            <div class="edu-data">
+              <h3 class="edu-header">Data Learning Camp</h3>
+              <p class="edu-place">Training course in data journalism</p>
+              <p class="edu-year">02.09 - 05.09.2019</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-content">
+            <div class="edu-period">
+              <span class="edu-rounded"></span>
+              <span class="edu-line"></span>
+            </div>
+            <div class="edu-data">
+              <h3 class="edu-header">Python for journalists</h3>
+              <p class="edu-place"><a href="https://datajournalism.com/" target="blank">Online-course</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-content">
+            <div class="edu-period">
+              <span class="edu-rounded"></span>
+              <!-- <span class="edu-line"></span> -->
+            </div>
+            <div class="edu-data">
+              <h3 class="edu-header">Master of Philology</h3>
+              <p class="edu-place">National University of Ostroh Academy</p>
+              <p class="edu-year">09.2010 - 06.2015</p>
+            </div>
+          </div>
+        </div>
+        <hr class="line" />
+      </section>
+      
+      <section class="languages" id="languages">
+        <h2 class="section-title">languages</h2>
+        <div class="section-content">
+            <ul class="section-list">
+                <li class="section-list-item">Ukrainian - native</li>
+                <li class="section-list-item">English - pre-intermediate</li>
+                <li class="section-list-item">Russian - advanced</li>
+                <li class="section-list-item">Spanish - elementary</li>
+            </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
